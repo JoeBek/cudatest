@@ -5,6 +5,8 @@
 
 #include <cuda_runtime.h>
 #include <npp.h>
+#include <cstdint>
+
 
 // the window has to be odd
 #define HALF_WINDOW_SIZE 7 // this produces a 15 x 15 window
