@@ -1,5 +1,5 @@
 
-#include "detection.cpp"
+#include "detection.hpp"
 
 
 void test_image(const cv::Mat &image) {
@@ -13,9 +13,9 @@ void test_image(const cv::Mat &image) {
 
     std::tie(points_device, len_device) = results;
     
-    HANDLE_ERROR( cudaMemcpy(len_device, len_host, sizeof(int), cudaDeviceToHost  ));
+    HANDLE_ERROR( cudaMemcpy(len_device, len_host, sizeof(int), cudaMemcpyDeviceToHost  ));
     points_host = new int2[*len_host];
-    HANDLE_ERROR( cudaMemcpy(points_device, points_host, sizeof(int2) * (*len_host), cudaDeviceToHost ));
+    HANDLE_ERROR( cudaMemcpy(points_device, points_host, sizeof(int2) * (*len_host), cudaMemcpyDeviceToHost ));
 
     for (int i = 0; i < *len_host; ++i) {
         std::cout << "Point " << i << ": (" << points_host[i].x << ", " << points_host[i].y << ")" << std::endl;

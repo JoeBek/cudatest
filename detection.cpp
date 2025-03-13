@@ -1,23 +1,12 @@
 
-#include "cuda.cu"
-#include <opencv2/opencv.hpp>
-
-
+#include "detection.hpp"
 
 // Error function and macro borrowed from 
 // https://github.com/jiekebo/CUDA-By-Example/blob/master/common/book.h
 
 // thank you 
-static void HandleError( cudaError_t err,
-                         const char *file,
-                         int line ) {
-    if (err != cudaSuccess) {
-        printf( "%s in %s at line %d\n", cudaGetErrorString( err ),
-                file, line );
-        exit( EXIT_FAILURE );
-    }
-}
-#define HANDLE_ERROR( err ) (HandleError( err, __FILE__, __LINE__ ))
+
+
 
 
 /**
@@ -29,10 +18,15 @@ static void HandleError( cudaError_t err,
 std::pair<int2*, int*> detect_line_pixels(const cv::Mat &image) {
 
     // convert to grayscale
-    cv::Mat gray_img = image.channels() == 3 ? cv::cvtColor(image, cv::COLORBGR2GRAY) : image;
-
-    int width = gray_img.cols;
+    cv::Mat gray_img;
+    if (image.channels() == 3) {
+        cv::cvtColor(image, gray_img, cv::COLOR_BGR2GRAY);
+    }
+    else {
+        gray_img = image;
+    }
     int height = gray_img.rows;
+    int width = gray_img.cols;
 
 
     // get mask
@@ -58,7 +52,7 @@ std::pair<int2*, int*> detect_line_pixels(const cv::Mat &image) {
     gray_img.convertTo(gray_float, CV_32F);
 
     float * input_image_device;
-    size_t total = width * height
+    size_t total = width * height;
     
     HANDLE_ERROR( cudaMalloc((void**) &input_image_device, total * sizeof(float)) );
     HANDLE_ERROR( cudaMemcpy(input_image_device, gray_float.ptr<float>(),total * sizeof(float), cudaMemcpyHostToDevice ));
@@ -83,21 +77,15 @@ std::pair<int2*, int*> detect_line_pixels(const cv::Mat &image) {
 
     // finally...
 
-    dim3 block(16, 16);
-    dim3 grid(
-        (gray_img.cols + block.x - 1) / block.x,
-        (gray_img.rows + block.y - 1) / block.y
-    );
-
-    cerias_kernel<<<grid, block>>>(
-        
+    cerias_kernel(
         input_image_device,
         integral, integral_sq,
         device_mask,
         output, counter,
         width, height
-
     );
+
+
 
     // going to try the direct ros topic mapping. If not, I'll be back to memcopy output and counter
 
@@ -112,7 +100,7 @@ std::pair<int2*, int*> detect_line_pixels(const cv::Mat &image) {
 
     //return output;
 
-    return std::make_pair<int2*,int*>(output, counter);
+    return std::make_pair(output, counter);
 
     
 
@@ -161,7 +149,7 @@ std::pair<Npp32f *, Npp64f *> __get_integral_image(const cv::Mat &gray_img) {
     // take npp integral
 
     NppStatus status;
-    status = nppiSqrIntegral_8u32s_C1R(
+    status = nppiSqrIntegral_8u32f64f_C1R(
         device_input_img, // input pointer (device)
         nsrcstep, // row length input
         result,  // result pointer (device)
@@ -181,7 +169,7 @@ std::pair<Npp32f *, Npp64f *> __get_integral_image(const cv::Mat &gray_img) {
     cudaFree(device_input_img);
     
 
-    return std::make_pair<Npp32f *, Npp64f *>(result, result_sq);
+    return std::make_pair(result, result_sq);
 
 
 }

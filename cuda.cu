@@ -2,11 +2,7 @@
  * Cuda kernels for fast Line detection processing
  * 
  */
-
-#include <cuda_runtime.h>
-#include <npp.h>
-#include <cstdint>
-
+#include "cuda.cuh"
 
 // the window has to be odd
 #define HALF_WINDOW_SIZE 7 // this produces a 15 x 15 window
@@ -18,7 +14,7 @@
 
 // dim3 block (16,16,1)
 // dim3 grid(COLS, ROWS)
-__global__ void cerias_kernel (
+__global__ void __cerias_kernel (
         float *gray_img,
         Npp32f *integral,
         Npp64f *integral_sq,
@@ -69,5 +65,36 @@ __global__ void cerias_kernel (
     }
 
 }
+
+extern "C" void cerias_kernel(float * gray_img,
+                             Npp32f * integral,
+                             Npp64f * integral_sq,
+                             uint8_t * mask,
+                             int2 * output,
+                             int * counter,
+                             int width, int height) 
+{
+
+    
+    dim3 block(16, 16);
+    dim3 grid(
+        (width + block.x - 1) / block.x,
+        (height + block.y - 1) / block.y
+    );
+
+    __cerias_kernel<<<grid, block>>>(
+        
+        gray_img,
+        integral, integral_sq,
+        mask,
+        output, counter,
+        width, height
+
+    );
+
+
+}
+
+                            
 
 

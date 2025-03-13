@@ -54,7 +54,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o.cmake.pre-gen"
-  "CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o.Debug.cmake"
+  "CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

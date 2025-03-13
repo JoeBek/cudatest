@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
 project(line_detector LANGUAGES CXX CUDA)
 
 # debugging
-set(CMAKE_BUILD_TYPE Debug)
-set(CMAKE_CUDA_FLAGS_DEBUG "-g -G -O0")
+#set(CMAKE_BUILD_TYPE Debug)
+#set(CMAKE_CUDA_FLAGS_DEBUG "-g -G -O0")
 
 # find packages
 find_package(OpenCV REQUIRED)
@@ -16,8 +16,9 @@ set(CMAKE_CUDA_ARCHITECTURES 60)
 set(CMAKE_CUDA_FLAGS "${CUDA_NVCC_FLAGS} --generate-code=arch=compute_60,code=sm_60")
 
 
-set_source_files_properties(cuda.cu PROPERTIES LANGUAGE CUDA)
-set_source_files_properties(detection.cpp PROPERTIES LANGUAGE CUDA)
+#set_source_files_properties(cuda.cu PROPERTIES LANGUAGE CUDA)
+#set_source_files_properties(detection.cpp PROPERTIES LANGUAGE CUDA)
+
 
 
 
@@ -33,6 +34,9 @@ target_include_directories(line_detector PRIVATE ${OpenCV_INCLUDE_DIRS})
 target_link_libraries(line_detector 
                       ${OpenCV_LIBS}
                       ${CUDA_LIBRARIES}
-                      ${CUDA_nppi_LIBRARY}  # For image processing
-                      ${CUDA_nppc_LIBRARY}  # Core NPP functionality
+                      nppist
+                        # For image processing
+                    
 )
+
+target_compile_features(line_detector PRIVATE cxx_std_11)

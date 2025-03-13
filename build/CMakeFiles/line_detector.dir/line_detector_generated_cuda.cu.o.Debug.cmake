@@ -72,7 +72,7 @@ set(generated_file_internal "/home/vtcro/dev/line_det/cudatest/build/CMakeFiles/
 set(generated_cubin_file_internal "/home/vtcro/dev/line_det/cudatest/build/CMakeFiles/line_detector.dir//./line_detector_generated_cuda.cu.o.cubin.txt") # path
 
 set(CUDA_NVCC_EXECUTABLE "/usr/bin/nvcc") # path
-set(CUDA_NVCC_FLAGS  -arch=sm_86 ;; ) # list
+set(CUDA_NVCC_FLAGS  ;; ) # list
 # Build specific configuration flags
 set(CUDA_NVCC_FLAGS_DEBUG  ; )
 set(CUDA_NVCC_FLAGS_MINSIZEREL  ; )

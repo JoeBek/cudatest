@@ -1,7 +1,7 @@
 CMakeFiles/line_detector.dir/main.cpp.o: \
  /home/vtcro/dev/line_det/cudatest/main.cpp /usr/include/stdc-predef.h \
- /home/vtcro/dev/line_det/cudatest/detection.cpp \
- /home/vtcro/dev/line_det/cudatest/cuda.cu /usr/include/cuda_runtime.h \
+ /home/vtcro/dev/line_det/cudatest/detection.hpp \
+ /home/vtcro/dev/line_det/cudatest/cuda.cuh /usr/include/cuda_runtime.h \
  /usr/include/crt/host_config.h /usr/include/builtin_types.h \
  /usr/include/device_types.h /usr/include/crt/host_defines.h \
  /usr/include/driver_types.h /usr/include/vector_types.h \
@@ -87,6 +87,9 @@ CMakeFiles/line_detector.dir/main.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/bits/stl_pair.h /usr/include/c++/11/bits/move.h \
+ /usr/include/c++/11/type_traits /usr/include/c++/11/initializer_list \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
@@ -99,11 +102,7 @@ CMakeFiles/line_detector.dir/main.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
- /usr/include/c++/11/array /usr/include/c++/11/utility \
- /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/bits/stl_pair.h /usr/include/c++/11/bits/move.h \
- /usr/include/c++/11/type_traits /usr/include/c++/11/initializer_list \
- /usr/include/c++/11/bits/functexcept.h \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/functexcept.h \
  /usr/include/c++/11/bits/exception_defines.h \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/cpp_type_traits.h \
