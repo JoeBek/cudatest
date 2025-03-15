@@ -9,6 +9,9 @@ project(line_detector LANGUAGES CXX CUDA)
 find_package(OpenCV REQUIRED)
 find_package(CUDA REQUIRED)
 
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+  set(CMAKE_CUDA_FLAGS ${CUDA_NVCC_FLAGS} "-g -G") # enable cuda-gdb
+endif()
 
 
 # set arch and nvcc flags

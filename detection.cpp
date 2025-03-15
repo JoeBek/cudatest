@@ -37,6 +37,7 @@ std::pair<int2*, int*> detect_line_pixels(const cv::Mat &image) {
     
 
     // Npp32u is typedef unsigned int. which is pretty much uint32_t. So I'm not casting it.
+
     std::pair<Npp32f *, Npp64f *> integrals = __get_integral_image(gray_img);
 
     Npp32f * integral;
@@ -124,7 +125,7 @@ std::pair<Npp32f *, Npp64f *> __get_integral_image(const cv::Mat &gray_img) {
     Npp8u *device_input_img;
 
     size_t image_size = gray_img.rows * gray_img.cols * sizeof(Npp8u);
-    HANDLE_ERROR( cudaMalloc((void**)&device_input_img, image_size) );
+    HANDLE_ERROR( cudaMalloc(&device_input_img, image_size) ) ;
     // CAREFUL, WE ARE CASTING TO 8 BIT PIXELS HERE, MAKE SURE INPUT IS 8 BIT
     HANDLE_ERROR( cudaMemcpy(device_input_img, gray_img.ptr<Npp8u>(), image_size, cudaMemcpyHostToDevice) );
 
@@ -132,11 +133,11 @@ std::pair<Npp32f *, Npp64f *> __get_integral_image(const cv::Mat &gray_img) {
     Npp64f *result_sq;
     
     size_t result_size = (height + 1) * (width + 1) * sizeof(Npp32f);
-    HANDLE_ERROR( cudaMalloc((void**)&result, result_size) );
+    HANDLE_ERROR( cudaMalloc(&result, result_size) );
     HANDLE_ERROR( cudaMemset(result, 0, result_size) );
 
     size_t result_sq_size = (height + 1) * (width + 1) * sizeof(Npp64f);
-    HANDLE_ERROR( cudaMalloc((void**)&result_sq, result_sq_size) );
+    HANDLE_ERROR( cudaMalloc(&result_sq, result_sq_size) );
     HANDLE_ERROR( cudaMemset(result_sq, 0, result_sq_size) );
 
     // set nsrcstep, ndststep, and roi
@@ -165,14 +166,14 @@ std::pair<Npp32f *, Npp64f *> __get_integral_image(const cv::Mat &gray_img) {
         std::cerr << "integral did not work. Your error code is: " << status << std::endl;
         exit( EXIT_FAILURE );
     }
-
     cudaFree(device_input_img);
-    
 
     return std::make_pair(result, result_sq);
 
 
+
 }
+
 
 
 

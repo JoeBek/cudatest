@@ -7,11 +7,11 @@ CUDA_DEFINES =
 
 CUDA_INCLUDES = -I/home/vtcro/dev/line_det/cudatest -isystem=/usr/include/opencv4
 
-CUDA_FLAGS =  --generate-code=arch=compute_60,code=sm_60 --generate-code=arch=compute_60,code=[compute_60,sm_60]
+CUDA_FLAGS =  --generate-code=arch=compute_60,code=sm_60 -g --generate-code=arch=compute_60,code=[compute_60,sm_60]
 
 CXX_DEFINES = 
 
 CXX_INCLUDES = -I/home/vtcro/dev/line_det/cudatest -isystem /usr/include/opencv4
 
-CXX_FLAGS = 
+CXX_FLAGS = -g
 

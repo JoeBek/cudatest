@@ -275,11 +275,11 @@ CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: /usr/lib/gcc/x86
 CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
 CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
 CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h
-CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o.cmake
+CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o.Debug.cmake
 CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: ../cuda.cu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtcro/dev/line_det/cudatest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o"
 	cd /home/vtcro/dev/line_det/cudatest/build/CMakeFiles/line_detector.dir && /usr/bin/cmake -E make_directory /home/vtcro/dev/line_det/cudatest/build/CMakeFiles/line_detector.dir//.
-	cd /home/vtcro/dev/line_det/cudatest/build/CMakeFiles/line_detector.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/vtcro/dev/line_det/cudatest/build/CMakeFiles/line_detector.dir//./line_detector_generated_cuda.cu.o -D generated_cubin_file:STRING=/home/vtcro/dev/line_det/cudatest/build/CMakeFiles/line_detector.dir//./line_detector_generated_cuda.cu.o.cubin.txt -P /home/vtcro/dev/line_det/cudatest/build/CMakeFiles/line_detector.dir//line_detector_generated_cuda.cu.o.cmake
+	cd /home/vtcro/dev/line_det/cudatest/build/CMakeFiles/line_detector.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Debug -D generated_file:STRING=/home/vtcro/dev/line_det/cudatest/build/CMakeFiles/line_detector.dir//./line_detector_generated_cuda.cu.o -D generated_cubin_file:STRING=/home/vtcro/dev/line_det/cudatest/build/CMakeFiles/line_detector.dir//./line_detector_generated_cuda.cu.o.cubin.txt -P /home/vtcro/dev/line_det/cudatest/build/CMakeFiles/line_detector.dir//line_detector_generated_cuda.cu.o.Debug.cmake
 
 CMakeFiles/line_detector.dir/main.cpp.o: CMakeFiles/line_detector.dir/flags.make
 CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp

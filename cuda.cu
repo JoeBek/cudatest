@@ -5,7 +5,7 @@
 #include "cuda.cuh"
 
 // the window has to be odd
-#define HALF_WINDOW_SIZE 7 // this produces a 15 x 15 window
+#define HALF_WINDOW_SIZE 3 // this produces a 15 x 15 window
 #define WINDOW_SIZE  2 * HALF_WINDOW_SIZE + 1
 #define WINDOW_SIZE_SQ  WINDOW_SIZE * WINDOW_SIZE
 #define SIGMA_THRESHOLD  15
@@ -35,8 +35,8 @@ __global__ void __cerias_kernel (
     // assemble the window
     int x1 = max(0, x - HALF_WINDOW_SIZE);
     int y1 = max(0, y - HALF_WINDOW_SIZE);
-    int x2 = min(gridDim.x - 1, x + HALF_WINDOW_SIZE);
-    int y2 = min(gridDim.y - 1, y + HALF_WINDOW_SIZE);
+    int x2 = min(width - 1, x + HALF_WINDOW_SIZE);
+    int y2 = min(height - 1, y + HALF_WINDOW_SIZE);
 
     // get intensity std. div of pixels in the window
 

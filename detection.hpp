@@ -16,7 +16,7 @@ static void HandleError( cudaError_t err,
     }
                          };
 
-                         
+
 #define HANDLE_ERROR( err ) (HandleError( err, __FILE__, __LINE__ ))
 
 std::pair<int2*, int*> detect_line_pixels(const cv::Mat&);
