@@ -31,7 +31,7 @@ std::pair<int2*, int*> detect_line_pixels(const cv::Mat &image) {
 
     // get mask
     cv::Mat mask;
-    double threshold = 200;
+    double threshold = 180;
     cv::threshold(gray_img, mask, threshold, 255, cv::THRESH_BINARY);
 
     
@@ -100,6 +100,8 @@ std::pair<int2*, int*> detect_line_pixels(const cv::Mat &image) {
 
 
     //return output;
+
+    cudaDeviceSynchronize();
 
     return std::make_pair(output, counter);
 

@@ -91,6 +91,7 @@ CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: /usr/include/c++
 CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: /usr/include/c++/11/bits/stl_pair.h
 CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: /usr/include/c++/11/cmath
 CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: /usr/include/c++/11/cstdint
+CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: /usr/include/c++/11/cstdio
 CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: /usr/include/c++/11/cstdlib
 CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: /usr/include/c++/11/debug/assertions.h
 CMakeFiles/line_detector.dir/line_detector_generated_cuda.cu.o: /usr/include/c++/11/debug/debug.h

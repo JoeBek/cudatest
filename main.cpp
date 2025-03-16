@@ -22,6 +22,17 @@ void test_image(const cv::Mat &image) {
     for (int i = 0; i < *len_host; ++i) {
         std::cout << "Point " << i << ": (" << points_host[i].x << ", " << points_host[i].y << ")" << std::endl;
     }   
+    cv::Mat color_image;
+    cv::cvtColor(image, color_image, cv::COLOR_GRAY2BGR);
+
+
+    for (int i = 0; i < *len_host; ++i) {
+        cv::circle(color_image, cv::Point(points_host[i].x, points_host[i].y), 3, cv::Scalar(0, 0, 255), -1);
+        std::cout << "Point " << i << ": (" << points_host[i].x << ", " << points_host[i].y << ")" << std::endl;
+    }
+    cv::imshow("Image with Points", color_image);
+    cv::waitKey(0);
+
 
     delete len_host;
     delete[] points_host;
@@ -72,13 +83,13 @@ int main() {
   //real_images.push_back(cv::imread("line1.jpg", cv::IMREAD_GRAYSCALE));
   //real_images.push_back(cv::imread("line2.jpg", cv::IMREAD_GRAYSCALE));
 
-  cv::Mat real = cv::imread("../../data/IMG_6942.JPG", cv::IMREAD_GRAYSCALE);
+  cv::Mat real = cv::imread("../../data/IMG_6958.JPG", cv::IMREAD_GRAYSCALE);
   
   // Generate synthetic test patterns with known ground truth
   std::vector<cv::Mat> synthetic_images;
   std::vector<std::vector<cv::Point>> ground_truth;
   
-  for (int width = 10; width <= 30; width += 5) {
+  for (int width = 40; width <= 70; width += 5) {
     cv::Mat synth(480, 640, CV_8UC1, cv::Scalar(1));
     std::vector<cv::Point> points;
     
@@ -114,10 +125,11 @@ int main() {
   uchar pixel = sacrifice.at<uchar>(0,0);
   std::cout << "pixel 0: " << static_cast<int>(pixel) << std::endl;
 
-  test_image(sacrifice);
+  test_image(real);
 
   cv::waitKey(0);
  
   return 0;
+
 }
 

@@ -111,6 +111,17 @@ CMakeFiles/line_detector.dir/detection.cpp.o: ../detection.cpp \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/cstdio \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/bits/stl_pair.h \
@@ -201,12 +212,8 @@ CMakeFiles/line_detector.dir/detection.cpp.o: ../detection.cpp \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/cwchar \
   /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/c++/11/clocale \
@@ -236,13 +243,6 @@ CMakeFiles/line_detector.dir/detection.cpp.o: ../detection.cpp \
   /usr/include/c++/11/string_view \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/ext/string_conversions.h \
-  /usr/include/c++/11/cstdio \
-  /usr/include/stdio.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -565,6 +565,17 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/cstdio \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/bits/stl_pair.h \
@@ -655,12 +666,8 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/cwchar \
   /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/c++/11/clocale \
@@ -690,13 +697,6 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/string_view \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/ext/string_conversions.h \
-  /usr/include/c++/11/cstdio \
-  /usr/include/stdio.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -1162,25 +1162,7 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
-/usr/include/opencv4/opencv2/stitching/warpers.hpp:
-
-/usr/include/opencv4/opencv2/stitching.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
-
-/usr/include/opencv4/opencv2/core/hal/interface.h:
-
-/usr/include/c++/11/bits/list.tcc:
-
-/usr/include/nppi_geometry_transforms.h:
-
-/usr/include/opencv4/opencv2/core.hpp:
-
 /usr/include/opencv4/opencv2/opencv.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-../detection.hpp:
 
 /usr/include/c++/11/tuple:
 
@@ -1192,9 +1174,9 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h:
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
+/usr/include/cuda_device_runtime_api.h:
 
 /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:
 
@@ -1202,13 +1184,19 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
+/usr/include/nppi_linear_transforms.h:
+
+/usr/include/c++/11/cstdio:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h:
+
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/c++/11/bits/charconv.h:
 
 /usr/include/npps.h:
-
-/usr/include/nppi_linear_transforms.h:
 
 /usr/include/opencv4/opencv2/flann/random.h:
 
@@ -1230,8 +1218,6 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 ../detection.cpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
-
 /usr/include/opencv4/opencv2/flann/allocator.h:
 
 /usr/include/nppi_support_functions.h:
@@ -1252,11 +1238,17 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/ext/new_allocator.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
 /usr/include/opencv4/opencv2/stitching/detail/util.hpp:
 
 /usr/include/opencv4/opencv2/flann/lsh_index.h:
 
 /usr/include/c++/11/bits/invoke.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/c++/11/bits/stl_queue.h:
 
@@ -1276,7 +1268,17 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
+/usr/include/opencv4/opencv2/flann/sampling.h:
+
+/usr/include/npp.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
 /usr/include/npps_statistics_functions.h:
+
+/usr/include/c++/11/bits/list.tcc:
+
+/usr/include/nppi_geometry_transforms.h:
 
 /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
 
@@ -1328,6 +1330,10 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+../detection.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/surface_types.h:
@@ -1345,12 +1351,6 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
 /usr/include/nppi_data_exchange_and_initialization.h:
-
-/usr/include/opencv4/opencv2/flann/sampling.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/npp.h:
 
 /usr/include/nppi.h:
 
@@ -1416,6 +1416,10 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
+/usr/include/c++/11/string:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
 /usr/include/c++/11/bits/concept_check.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
@@ -1450,33 +1454,17 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/vector_types.h:
 
-/usr/include/c++/11/system_error:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
-
-/usr/include/wctype.h:
-
-/usr/include/device_types.h:
-
-/usr/include/sched.h:
-
 /usr/include/nppdefs.h:
 
 /usr/include/cuda_runtime_api.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
-/usr/include/library_types.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
-
 /usr/include/driver_functions.h:
 
+/usr/include/opencv4/opencv2/core/hal/interface.h:
+
 /usr/include/vector_functions.hpp:
-
-/usr/include/c++/11/cstddef:
-
-/usr/include/c++/11/bits/stl_vector.h:
 
 /usr/include/c++/11/stdlib.h:
 
@@ -1492,15 +1480,11 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
-/usr/include/cuda_device_runtime_api.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
 /usr/include/c++/11/pstl/pstl_config.h:
+
+/usr/include/c++/11/bits/stl_tempbuf.h:
+
+/usr/include/c++/11/bits/std_function.h:
 
 /usr/include/c++/11/type_traits:
 
@@ -1522,10 +1506,6 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/bits/postypes.h:
 
-/usr/include/c++/11/bits/range_access.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
@@ -1534,9 +1514,43 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
+/usr/include/stdio.h:
+
 /usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/opencv4/opencv2/core.hpp:
+
+/usr/include/c++/11/bits/stl_vector.h:
+
+/usr/include/c++/11/cstddef:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/c++/11/bits/range_access.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
+
+/usr/include/library_types.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
+
+/usr/include/opencv4/opencv2/stitching/warpers.hpp:
+
+/usr/include/opencv4/opencv2/stitching.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
+
+/usr/include/c++/11/system_error:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
+
+/usr/include/wctype.h:
+
+/usr/include/device_types.h:
+
+/usr/include/sched.h:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
 
@@ -1544,9 +1558,9 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/bits/sstream.tcc:
 
-/usr/include/c++/11/new:
-
 /usr/include/nppcore.h:
+
+/usr/include/c++/11/new:
 
 /usr/include/c++/11/climits:
 
@@ -1591,10 +1605,6 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/11/bits/std_abs.h:
 
 /usr/include/c++/11/bits/stl_heap.h:
-
-/usr/include/c++/11/bits/std_function.h:
-
-/usr/include/c++/11/bits/stl_tempbuf.h:
 
 /usr/include/c++/11/bits/shared_ptr.h:
 
@@ -1686,11 +1696,11 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/opencv4/opencv2/photo.hpp:
 
-/usr/include/c++/11/bits/ptr_traits.h:
-
 /usr/include/stdint.h:
 
 /usr/include/endian.h:
+
+/usr/include/c++/11/bits/ptr_traits.h:
 
 /usr/include/c++/11/bits/erase_if.h:
 
@@ -1713,10 +1723,6 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/11/locale:
 
 /usr/include/ctype.h:
-
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
-
-/usr/include/c++/11/string:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
@@ -1748,11 +1754,9 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/npps_initialization.h:
 
-/usr/include/time.h:
-
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+/usr/include/time.h:
 
 /usr/include/c++/11/bits/stl_bvector.h:
 
@@ -1763,10 +1767,6 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
 /usr/include/c++/11/ext/string_conversions.h:
-
-/usr/include/c++/11/cstdio:
-
-/usr/include/stdio.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -1786,9 +1786,9 @@ CMakeFiles/line_detector.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/math.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/c++/11/string_view:
 
